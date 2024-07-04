@@ -36,7 +36,6 @@ resource "aws_iam_user" "user8" {
 
 resource "aws_iam_group" "group1" {
   name = "blackpink"
-
 }
 
 resource "aws_iam_group" "group2" {
