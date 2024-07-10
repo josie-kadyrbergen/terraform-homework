@@ -20,12 +20,12 @@ ami_id = "ami-0c55b159cbfafe1f0" # Example AMI ID, replace with a valid one
 
 4. To deploy in a specific region, use the -var-file flag: 
 ```bash
-bash terraform apply -var-file=file_name.tfvars
+terraform apply -var-file=file_name.tfvars
 ```
 
 5. After deployment, you can destroy the resources:
 ```bash
-bash terraform destroy -var-file=file_name.tfvars
+terraform destroy -var-file=file_name.tfvars
 ```
 
 
