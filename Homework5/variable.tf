@@ -10,24 +10,12 @@ variable internet_gateway_name {
   type = string
 }
 
-variable vpc_cidr {
-  type = string
+variable vpc {
+  type = list(object ({cidr = string, dns_support = bool, dns_hostnames = bool}))
 }
 
-variable dns_support {
-  type = bool
-}
-
-variable dns_hostnames {
-  type = bool
-}
-
-variable subnet_cidrs {
-  type = list(string)
-}
-
-variable subnet_names {
-  type = list(string)
+variable subnet {
+  type = list(object ({cidr = string, name = string}))
 }
 
 variable ec2_instances {
